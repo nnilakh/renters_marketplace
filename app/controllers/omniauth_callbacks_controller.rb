@@ -1,3 +1,4 @@
+#Niki: Start - Facebook Authentication
 class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
 	def facebook
@@ -13,3 +14,4 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 	end
 
 end
+#Niki: End - Facebook Authentication

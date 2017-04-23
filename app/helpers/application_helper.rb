@@ -1,5 +1,5 @@
 module ApplicationHelper
-    #Niki: Start - Adding an avatar for user
+    #Niki: Start - Helper method to get gravatar based on user email/fb login
     def avatar_url(user)
         gravatar_id = Digest::MD5::hexdigest(user.email).downcase
         if user.image
@@ -8,5 +8,5 @@ module ApplicationHelper
             "https://www.gravatar.com/avatar/#{gravatar_id}.jpg?d=identical&s=150"
         end
     end  
-    #Niki: End - Adding an avatar for user
+    #Niki: End - Helper method to get gravatar based on user email/fb login
 end
